@@ -1,0 +1,363 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header nav .navigation-bar .underline,header .text .button button:hover,.contact .form form button:hover,.contact .text i:hover{
+    background-color:#a96700
+}
+header .navigation-bar ul li,header .text,.about-us .text,.reservation .text,.menu .box-model,.menu .text,.fixed-image .text,footer,.copyright,.contact .text i{
+    text-align:center
+}
+header nav,header .navigation-bar ul,.about-us,.reservation,.about-us .image-container,.reservation .image-container,.menu,.menu .menu-image-container,footer .contact-container,.copyright ul,.contact{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex
+}
+header nav .toggle,header nav .toggle span,header .navigation-bar,header .navigation-bar ul,.menu .box-model .close,footer .social-media .links a,.copyright .CTA li a{
+    -webkit-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s
+}
+header,header nav .toggle span,header .navigation-bar a,header .text,header .text .arrow .left,header .text .arrow .right,.recipes,.menu .box-image-container,.fixed-image .text,.copyright,.copyright .arrow-up,.copyright .arrow-up:after{
+    position:relative
+}
+header nav .toggle,header .navigation-bar .underline,header .text .arrow .left:after,header .text .arrow .right:after,header .svg-down,header .arrow-down,.recipes .text,.menu .box-model .close,.menu .box-model .arrow .arrow-right,.menu .box-model .arrow .arrow-left,.menu .box-image-container .box-image,.copyright .svg-up{
+    position:absolute
+}
+header nav,header .navigation-bar a:hover .underline,header .navigation-bar li.active .underline,.menu .box-model,.menu .box-image-container,.menu .box-image-container .box-image{
+    width:100%
+}
+button,.dots > div,header nav .toggle,header .arrow-down,.menu .box-model .close,.menu .box-model .arrow .arrow-right,.menu .box-model .arrow .arrow-left,.menu .menu-image-container .image img,footer .newsletter i,.copyright .arrow-up,.copyright .arrow-up:after{
+    cursor:pointer
+}
+.dots .active,header nav.active,header nav.active .toggle.active span,header nav .toggle span,header .navigation-bar .underline,header .text .arrow .left,header .text .arrow .right,header .text .button button,.contact form button{
+    background-color:black;
+}
+h1,h3,header .navigation-bar a,header .text span,.menu .box-model .close:hover,footer .text h2,footer .text p,footer .social-media .links a,.contact .text i,.contact .form form button{
+    color:black;
+}
+header nav,header .navigation-bar.show,header .navigation-bar a:hover .underline,header .navigation-bar li.active .underline,header .text .arrow .left:after,.menu .box-model,.copyright .arrow-up{
+    left:0
+}
+header nav{
+    position:fixed;
+    top:0;
+    padding:36px 36px 20px;
+    z-index:20
+}
+header nav .toggle{
+    display:none;
+    top:26px;
+    left:20px;
+    background-color:transparent;
+    border:none;
+    padding:0;
+    z-index:21
+}
+header nav .toggle:focus{
+    outline:none
+}
+header nav.active .toggle span{
+    background-color:#000
+}
+header nav .toggle.active{
+    left:32%
+}
+header nav .toggle.active .first{
+    top:16px;
+    -webkit-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    transform:rotate(-45deg)
+}
+header nav .toggle.active .last{
+    top:0;
+    -webkit-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg)
+}
+header nav .toggle .hide{
+    -webkit-transition:0;
+    -o-transition:0;
+    transition:0;
+    visibility:hidden
+}
+header nav .toggle span{
+    display:block;
+    width:30px;
+    height:2px;
+    -webkit-border-radius:40px;
+    border-radius:40px
+}
+header nav .toggle span:not(:last-of-type){
+    margin-bottom:6px
+}
+header nav .logo{
+    -webkit-flex-basis:56%;
+    -ms-flex-preferred-size:56%;
+    flex-basis:56%;
+    padding-left:50px
+}
+header .navigation-bar.show{
+    width:40%
+}
+header .navigation-bar.show a{
+    color:#ccc
+}
+header .navigation-bar.show a:hover{
+    color:#fff
+}
+header .navigation-bar ul li{
+    -webkit-box-flex:1;
+    -webkit-flex:1;
+    -ms-flex:1;
+    flex:1;
+    padding:0 10px;
+    width: 10em;
+}
+header .navigation-bar a{
+    text-decoration:none;
+    -webkit-transition:all .5s;
+    -o-transition:all .5s;
+    transition:all .5s;
+    font-size:16px
+}
+header nav.active .navigation-bar a{
+    color:#000
+}
+header .navigation-bar .underline{
+    height:2px;
+    width:0;
+    left:50%;
+    bottom:-4px;
+    -webkit-transition:all .3s;
+    -o-transition:all .3s;
+    transition:all .3s;
+    display:block
+}
+header .text{
+    top:24%
+}
+header .text h1{
+    margin-bottom:0
+}
+header .text .arrow .left,header .text .arrow .right{
+    height:3px;
+    width:100px
+}
+header .text .arrow .left{
+    left:-4%
+}
+header .text .arrow .right{
+    right:-4%
+}
+header .text .arrow .left:after,header .text .arrow .right:after{
+    content:'';
+    border:10px solid transparent;
+    border-left-color:#fff;
+    top:-8px
+}
+header .text .arrow .right:after{
+    right:0;
+    border-color:transparent #fff transparent transparent
+}
+header .text .arrow .fa-asterisk{
+    vertical-align:super
+}
+header .text span{
+    margin-bottom:12px;
+    font:15px "Source Code Pro",sans-serif
+}
+header .text .button button,.contact form button{
+    border:none;
+    padding:9px 18px;
+    letter-spacing:2.4px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    font:12px source_sans_problack,sans-serif
+}
+header .text .button button,.contact form button:focus{
+    outline:none
+}
+header .svg-down{
+    bottom:0;
+    left:50%;
+    z-index:5;
+    margin-left:-96px;
+    margin-bottom:-12px;
+    color:#fff
+}
+header .arrow-down{
+    width:70px;
+    height:50px;
+    bottom:-10px;
+    left:50%;
+    -webkit-transform:translate(-50%,0);
+    -ms-transform:translate(-50%,0);
+    transform:translate(-50%,0);
+    z-index:10;
+}
+
+@media (max-width: 992px){
+    body{
+        padding:0
+    }
+    .dots{
+        display:none
+    }
+    header{
+        height:-webkit-calc(100vh - 10px);
+        height:calc(100vh - 10px)
+    }
+    header nav .logo{
+        padding-left:0
+    }
+    .about-us{
+        display:block;
+        padding-top:50px
+    }
+    .about-us .text,.reservation .text{
+        padding:0 0 40px
+    }
+    .about-us .image-container .image1,.reservation .image-container .image1{
+        margin-left:0
+    }
+    .menu{
+        display:block;
+        padding:60px 20px 60px 40px
+    }
+    .menu .text{
+        padding:20px 20px 0 0
+    }
+    .reservation{
+        display:block;
+        padding:30px 20px 60px
+    }
+    .contact{
+        display:block;
+        padding:78px 20px
+    }
+    .contact .form{
+        margin-left:0;
+        margin-top:40px
+    }
+}
+@media (max-width: 768px){
+    header .navigation-bar ul li{
+        width: 0;
+    }
+    header nav{
+        display:block;
+        text-align:center;
+        left:0;
+        top:0;
+        width:100%;
+        padding-top:25px
+    }
+    header nav .toggle{
+        display:block
+    }
+    header .navigation-bar{
+        position:fixed;
+        top:0;
+        left:-174px;
+        height:100%;
+        background-color:#262526;
+        overflow:hidden;
+        z-index:20;
+        padding:40px
+    }
+    header .navigation-bar ul{
+        display:block;
+        padding-top:40px
+    }
+    header .navigation-bar ul li{
+        text-align:left;
+        padding:14px 0
+    }
+    footer .contact-container{
+        display:block
+    }
+    footer .social-media{
+        margin-bottom:40px
+    }
+    .copyright ul{
+        display:block;
+        margin-top:-20px
+    }
+    .copyright li{
+        margin-bottom:5px
+    }
+    .copyright li:not(:last-of-type):after{
+        content:''
+    }
+}
+@media (max-width: 576px){
+    h1,h3{
+        font-size:40px
+    }
+    h2{
+        font-size:90px
+    }
+    header{
+        padding:0
+    }
+    header nav .logo{
+        padding-left:0
+    }
+    header nav .toggle.active{
+        left:36%
+    }
+    header .navigation-bar.show{
+        padding:20px;
+        width:48%
+    }
+    .about-us,.reservation{
+        padding:60px 20px
+    }
+    .menu{
+        padding:60px 0 60px 20px
+    }
+}
+
+/*scrollbar*/
+
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
