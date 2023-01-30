@@ -164,8 +164,13 @@
                     </div>
                     <div class="col-md-5 mb-30 offset-md-1">
                         <h3>Get in touch</h3>
-                        <form method="post" class="contact__form" action="https://formsubmit.co/a44152ca35759583acb2217deaec8946" methoud="POST">
+                        <form method="post" class="contact__form"
+                            action="https://formsubmit.co/a44152ca35759583acb2217deaec8946" methoud="POST">
                             <!-- form message -->
+                            <!--Captcha disabled-->
+                            <input type="hidden" name="_captcha" value="false">
+                            <!--Terug naar index voor nu, later een thank you pagina erbij-->
+                            <input type="hidden" name="_next" value="https://amw-veranda-tryout.netlify.app/index.html">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="alert alert-success contact__msg" style="display: none" role="alert">
@@ -178,7 +183,7 @@
                                     <input name="name" type="text" placeholder="Uw Naam*" required>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <input name="email" type="email" placeholder="Uw e-mail*" required>
+                                    <input type="email" name="email" placeholder="Email Address*">
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <input name="phone" type="text" placeholder="Uw Nummer *" required>
@@ -187,8 +192,8 @@
                                     <input name="subject" type="text" placeholder="Het onderwerp  *" required>
                                 </div>
                                 <div class="col-md-12 form-group">
-                                    <textarea name="message" id="message" cols="30" rows="4" placeholder="Beschrijving van het onderwerp of vraag*"
-                                        required></textarea>
+                                    <textarea name="message" id="message" cols="30" rows="4"
+                                        placeholder="Beschrijving van het onderwerp of vraag*" required></textarea>
                                 </div>
                                 <div class="col-md-12">
                                     <button class="butn-dark"><a href="#0"><span>Send Message</span></a></button>
