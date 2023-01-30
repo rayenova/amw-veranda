@@ -123,7 +123,7 @@
 	content: "\e620";
 }
 .ti-mobile:before {
-	content: "\e621";
+	content: "&#xe621";
 }
 .ti-minus:before {
 	content: "\e622";
