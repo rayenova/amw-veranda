@@ -16,9 +16,7 @@ ul {
     padding: 0;
     list-style: none;
 }
-img {
-    max-width: 100%;
-}
+
 h2 {
     font-family: 'Herr Von Muellerhoff', cursive;
     font-size: 100px;
@@ -620,6 +618,11 @@ header nav .logo {
     flex-basis: 56%;
     padding-left: 50px;
 }
+.logo{
+  width:10%!important;
+  height:10%!important;
+}
+
 header .navigation-bar.show {
     width: 40%;
 }

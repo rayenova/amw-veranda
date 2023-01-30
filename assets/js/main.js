@@ -80,12 +80,19 @@ svgUp.addEventListener("click", () => {
 
 window.onscroll = function() {
     // make navbar fixed & change logo color
+    // if (window.pageYOffset > headerSection.offsetHeight - 75) {
+    //     nav.classList.add("active");
+    //     logoImage.src = "../img/veranda-5.jpg";
+    // } else {
+    //     nav.classList.remove("active");
+    //     logoImage.src = "img/logo-rosa-white.png";
+    // }
+
+    // make navbar fixed
     if (window.pageYOffset > headerSection.offsetHeight - 75) {
         nav.classList.add("active");
-        logoImage.src = "img/logo-rosa.png";
     } else {
         nav.classList.remove("active");
-        logoImage.src = "img/logo-rosa-white.png";
     }
 
     // header welcome fade out and in

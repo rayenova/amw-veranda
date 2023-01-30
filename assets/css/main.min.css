@@ -5,7 +5,7 @@ html{
     font-size:1em
 }
 body{
-    margin:0
+    margin:0 !important;
 }
 h1{
     font-size:2em;
@@ -62,6 +62,8 @@ img,svg{
 textarea{
     resize:vertical
 }
+
+
 @media print{
     *,:before,:after{
         background:transparent!important;
@@ -115,6 +117,7 @@ img{
     max-width:100%
 }
 h2{
+    color:black !important;
     margin:0 0 -55px;
     font:400 100px 'Herr Von Muellerhoff',cursive
 }
@@ -658,7 +661,7 @@ header{
     height:calc(100vh - 22px);
     -webkit-background-size:cover;
     background-size:cover;
-    background:url(../img/veranda-4.jpg) fixed bottom;
+    background:url(../img/veranda-5.jpg) fixed bottom;
     padding:20px 70px
 }
 header nav{
@@ -714,10 +717,14 @@ header nav .toggle span:not(:last-of-type){
     margin-bottom:6px
 }
 header nav .logo{
-    -webkit-flex-basis:56%;
-    -ms-flex-preferred-size:56%;
+    /* -webkit-flex-basis:56%;
+    -ms-flex-preferred-size:56%; */
     flex-basis:56%;
     padding-left:50px
+}
+.logo img {
+    width: 10%;
+    height: auto;
 }
 header .navigation-bar.show{
     width:40%
