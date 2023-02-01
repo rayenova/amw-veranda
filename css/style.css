@@ -41,13 +41,22 @@
  
 ------------------------------------------------------- */
 :root{
-    --iconANDtext:#aa8453;
+    /* --iconANDtext:#aa8453;
     --bodytext:  #666;
     --title: #222;
     --backgroundcardANDtable:   #f9f7f3;
     --bgCream:#faf8f5;
     --owlANDborderowl: #b19777;
     --backgroundNav:#f6f1eb;
+    --buttons: #ab8a62; */
+    --iconANDtext:#53a6aa;
+    --bodytext:  rgb(102, 102, 102);
+    --title: rgb(34, 34, 34);
+    --backgroundcardANDtable:   #f3f7f9;
+    --bgCream:#f5faf8;
+    --owlANDborderowl: #77b1ad;
+    --backgroundNav:#ebf6f5;
+    --buttons:#6268ab;
 }
 
 /* ======= Basic style ======= */
@@ -2366,7 +2375,7 @@ color: var(--iconANDtext);
 .rooms2 .caption h3,
 .rooms2 .caption h3 a {
     font-size: 24px;
-    color: #ab8a62;
+    color: var(--buttons);
     margin-bottom: 0px;
 }
 .rooms2 .caption h3 span {
@@ -2418,7 +2427,7 @@ color: var(--iconANDtext);
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 15px;
     background: transparent;
-    border: 1px solid #ab8a62;
+    border: 1px solid          var(--buttons);
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: 3px 12px;
@@ -4537,7 +4546,7 @@ button.mfp-arrow {
     font-weight: 400;
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
-    background: #ab8a62;
+    background: var(--buttons);
     color: #fff;
     padding: 13px 22px;
     margin: 0;
