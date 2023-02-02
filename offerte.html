@@ -178,11 +178,11 @@
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="lastname"><span>*</span> Achternaam</label>
-                                <input name="lastname" type="text" placeholder="Uw Achternaam..." required>
+                                <input name="lastname" id="lastname" type="text" placeholder="Uw Achternaam..." required>
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="postcode"><span>*</span> Postcode</label>
-                                <input name="postcode" type="text" placeholder="Uw postcode..." required>
+                                <input name="postcode" id="postcode" type="text" placeholder="Uw postcode..." required>
                             </div>                            
                             <div class="col-md-6 form-group">
                                 <label for="adress"><span>*</span> Uw Adress</label>
@@ -194,7 +194,7 @@
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="phone"><span>*</span> Telefoon nummer</label>
-                                <input name="phone" type="text" placeholder="Uw Nummer..." required>
+                                <input name="phone" id="phone" type="text" placeholder="Uw Nummer..." required>
                             </div>
                             
                             <div class="col-md-12">
@@ -224,7 +224,7 @@
                                     <div class="select-wrapper">
                                         <label><span>*</span> Materiaal bovenkant (dak)</label>
                                         <div class="select1_inner">
-                                            <select class="select2 select" name="materiaal bovenkant" id="materiaal" style="width:100%">
+                                            <select class="select2 select" name="materiaal bovenkant" id="dak" style="width:100%">
                                                 <option value="Polycarbonaat Helder">Polycarbonaat Helder</option>
                                                 <option value="Polycarbonaat Opaal">Polycarbonaat Opaal</option>
                                                 <option value="glas">Glas</option>
@@ -250,7 +250,7 @@
                                     <div class="select-wrapper">
                                         <label><span>*</span>Zijwand links</label>
                                         <div class="select1_inner">
-                                            <select class="select2 select" name="zijwand links" id="links" style="width:100%">
+                                            <select class="select2 select" name="zijwand links" id="zijwand-links" style="width:100%">
                                                 <option value="open">Open</option>
                                                 <option value="Zijwand aluminium paneel">Zijwand aluminium paneel</option>
                                                 <option value="Zijwanden isolatie wanden">Zijwanden isolatie wanden</option>
@@ -266,7 +266,7 @@
                                     <div class="select-wrapper">
                                         <label><span>*</span>Zijwand rechts</label>
                                         <div class="select1_inner">
-                                            <select class="select2 select" name="zijwand rechts" id="rechts" style="width:100%">
+                                            <select class="select2 select" name="zijwand rechts" id="zijwand-rechts" style="width:100%">
                                                 <option value="open">Open</option>
                                                 <option value="Zijwand aluminium paneel">Zijwand aluminium paneel</option>
                                                 <option value="Zijwanden isolatie wanden">Zijwanden isolatie wanden</option>
@@ -282,7 +282,7 @@
                                     <div class="select-wrapper">
                                         <label><span>*</span>Spie links</label>
                                         <div class="select1_inner">
-                                            <select class="select2 select" name="Spie links" id="slinks" style="width:100%">
+                                            <select class="select2 select" name="Spie links" id="spie-links" style="width:100%">
                                                 <option value="open">Open</option>
                                                 <option value="Spie glas">Spie glas</option>
                                                 <option value="Spie polycarbonaat">Spie polycarbonaat</option>
@@ -296,7 +296,7 @@
                                     <div class="select-wrapper">
                                         <label><span>*</span>Spie rechts</label>
                                         <div class="select1_inner">
-                                            <select class="select2 select" name="spie rechts" id="Srechts" style="width:100%">
+                                            <select class="select2 select" name="spie rechts" id="spie-rechts" style="width:100%">
                                                 <option value="open">Open</option>
                                                 <option value="Spie glas">Spie glas</option>
                                                 <option value="Spie polycarbonaat">Spie polycarbonaat</option>
@@ -334,17 +334,17 @@
 
                             <div class="col-md-6 form-group">
                                 <label for="breedte"><span>*</span> Breedte in centimeter (cm)</label>
-                                <input name="breedte" type="number" min="10" required>
+                                <input name="breedte"  id="breedte" type="number" min="10" required>
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="diepte"><span>*</span> Diepte in centimeter (cm)</label>
-                                <input name="diepte" type="number" min="1" required>
+                                <input name="diepte" id="diepte" type="number" min="1" required>
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="opmerking">Opmerkingen</label>
-                                <input name="opmerking" type="text" placeholder="Opmerking...">
+                                <input name="opmerking" id="opmerking" type="text" placeholder="Opmerking...">
                             </div>
 
                             <div class="col-md-12">
@@ -465,70 +465,10 @@
 <script src="js/datepicker.js"></script>
 <script src="js/smooth-scroll.min.js"></script>
 <script src="js/custom.js"></script>
+<script src="/js/offerte.js"></script>
+<script src="/js/submission.js"></script>
 
-<script>
-    document.getElementById("offerteForm").addEventListener("submit", function(event){
-        event.preventDefault();
-        // hide step 1 form
-        document.getElementById("offerteForm").style.display = "none";
-        // show step 2 form
-        document.getElementById("offerteForm2").style.display = "block";
-        // update the progress bar
-        progressBar.style.width = `${(2 / 3) * 100}%`;
-        circles.forEach(function(circle) {
-          circle.classList.remove("active");
-          if (circle.getAttribute("data-step") == 2) {
-            circle.classList.add("active");
-          }
-        });
-      });
-      
-      document.getElementById("offerteForm2").addEventListener("submit", function(event){
-        event.preventDefault();
-        // hide step 2 form
-        document.getElementById("offerteForm2").style.display = "none";
-        // show step 3 form
-        document.getElementById("offerteForm3").style.display = "block";
-        // update the progress bar
-        progressBar.style.width = `${(3 / 3) * 100}%`;
-        circles.forEach(function(circle) {
-          circle.classList.remove("active");
-          if (circle.getAttribute("data-step") == 3) {
-            circle.classList.add("active");
-          }
-        });
-      });
-      
-      const circles = document.querySelectorAll(".circle");
-      const progress = document.querySelector(".progress");
-      const progressBar = document.getElementById("progress");
-      
-      let activeStep = 1;
-      let currentStep = 1;
-      
-      circles[0].classList.add("active");
-      progressBar.style.width = `${(activeStep / 9) * 100}%`;
-      
-      document.querySelectorAll(".btn").forEach(function(button) {
-          button.addEventListener("click", function() {
-              if (button.getAttribute("data-step") > activeStep) {
-                  activeStep = button.getAttribute("data-step");
-                  progressBar.style.width = `${(activeStep / 6) * 100}%`;
-                  circles.forEach(function(circle) {
-                      circle.classList.remove("active");
-                      if (circle.getAttribute("data-step") == activeStep) {
-                          circle.classList.add("active");
-                      }
-                  });
-              }
-          });
-      });
-      
-      
-      
-      
-     
-</script>
+
 </body>
 
 </html>
