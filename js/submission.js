@@ -40,13 +40,10 @@ combinedData.Afmetingen.diepte = document.querySelector("#diepte").value;
 combinedData.Afmetingen.opmerking = document.querySelector("#opmerking").value;
 
 console.log(combinedData);
-
-// JSON.stringify(combinedData);
-
-
+const dataString = JSON.stringify(combinedData);
 
   const xhr = new XMLHttpRequest();
-  xhr.open("POST", "https://amw-veranda-tryout.netlify.app/server.php", true);
+  xhr.open("POST", "offerte.html/server.php", true);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.onreadystatechange = function() {
   if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
@@ -54,10 +51,7 @@ console.log(combinedData);
   console.log(response.status);
   }
   };
-  xhr.send(JSON.stringify(combinedData));
-
-
-
+  xhr.send(dataString);
 });
 // JSON.stringify(combinedData);
 
