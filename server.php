@@ -1,4 +1,3 @@
-
 <?php
 
 header("Access-Control-Allow-Methods: POST");
@@ -28,7 +27,7 @@ $message .= "Spotjes: " . $formData['Materialen']['spotjes'] . "\n\n";
 $message .= "Breedte: " . $formData['Afmetingen']['breedte'] . "\n";
 $message .= "Diepte: " . $formData['Afmetingen']['diepte'] . "\n";
 $message .= "Opmerking: " . $formData['Afmetingen']['opmerking'] . "\n";
-$headers = "From: no-reply@example.com\r\n";
+$headers = "From: ranimm01@hotmail.com\r\n";
 
 if (mail($to, $subject, $message, $headers)) {
   echo json_encode(["status" => "Success"]);

@@ -36,28 +36,47 @@ offerteForm3.addEventListener("submit", function(e) {
   e.preventDefault();
 
   combinedData.Afmetingen.breedte = document.querySelector("#breedte").value;
-  combinedData.Afmetingen.diepte = document.querySelector("#diepte").value;
-  combinedData.Afmetingen.opmerking = document.querySelector("#opmerking").value;
+combinedData.Afmetingen.diepte = document.querySelector("#diepte").value;
+combinedData.Afmetingen.opmerking = document.querySelector("#opmerking").value;
 
-  console.log(combinedData);
-  JSON.stringify(combinedData);
+console.log(combinedData);
 
-  
-  fetch("/php/server.php", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(combinedData)
-  })
+// JSON.stringify(combinedData);
 
-    .then(res => {
-      if (!res.ok) {
-        throw new Error("Response is not JSON");
-      }
-      return res.json();
-      
-    })
-    .then(data => console.log(data))
-    .catch(error => console.error(error));
+
+
+  const xhr = new XMLHttpRequest();
+  xhr.open("POST", "https://amw-veranda-tryout.netlify.app/server.php", true);
+  xhr.setRequestHeader("Content-Type", "application/json");
+  xhr.onreadystatechange = function() {
+  if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+  const response = JSON.parse(xhr.responseText);
+  console.log(response.status);
+  }
+  };
+  xhr.send(JSON.stringify(combinedData));
+
+
+
 });
+// JSON.stringify(combinedData);
+
+
+// fetch("/php/server.php", {
+//   method: "POST",
+//   headers: {
+//     "Content-Type": "application/json"
+//   },
+//   body: JSON.stringify(combinedData)
+// })
+
+//   .then(res => {
+//     if (!res.ok) {
+//       throw new Error("Response is not JSON");
+//     }
+//     return res.json();
+    
+//   })
+//   .then(data => console.log(data))
+//   .catch(error => console.error(error));
+
