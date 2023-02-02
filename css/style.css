@@ -57,7 +57,64 @@
     --owlANDborderowl: #77b1ad;
     --backgroundNav:#ebf6f5;
     --buttons:#6268ab;
+
+    --line-border-color: #3893a5;
+    --disabled-line-border: #d1d2d4;
+    --button-active-color: #0a2883;
+    --text-color: #868991;
 }
+
+
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    position: relative;
+    width: 20vw;
+}
+
+.progress-container::before {
+    background-color: var(--disabled-line-border);
+    content: "";
+    height: 0.4rem;
+    left: 0;
+    position: absolute;
+    top: 58%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: -1;
+}
+
+.progress {
+    background-color: var(--line-border-color);
+    height: 0.4rem;
+    left: 0;
+    position: absolute;
+    top: 58%;
+    transform: translateY(-50%);
+    transition: 0.4s ease;
+    width: 0%;
+    z-index: -1;
+}
+
+.circle {
+    align-items: center;
+    background-color: #fff;
+    border: 3px solid var(--disabled-line-border);
+    border-radius: 50%;
+    color: var(--text-color);
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    transition: 0.4s ease;
+    width: 3rem;
+}
+
+.circle.active {
+    border-color: var(--line-border-color);
+}
+
 
 /* ======= Basic style ======= */
 html,
@@ -66,6 +123,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     font-smoothing: antialiased;
+}
+.center{
+    align-items: center;
 }
 * {
     margin: 0;
@@ -836,6 +896,18 @@ color: var(--iconANDtext);
         transform: translateX(-270px);
         padding: 60px 30px 0 30px;
     }
+
+        .row-reverse{
+            display: flex;
+            flex-direction: column-reverse;
+        
+      }
+
+      .progress-bar{
+        flex-direction: row;
+        gap: 2em;
+
+      }
 }
 /* logo */
 #cappa-aside .cappa-logo {
@@ -1394,7 +1466,7 @@ body.offcanvas .cappa-nav-toggle {
     animation-delay: .8s;
 }
 
-.header .caption .butn-dark {
+.header .caption .butn-dark, .butn-dark {
     -webkit-animation-delay: .8s;
     animation-delay: .8s;
 }
@@ -2084,6 +2156,8 @@ hr {
 .video-fullscreen-wrap .butn-dark a {
     color: #fff;
 }
+
+
 .position-relative {
   position: relative !important;
 }
@@ -3512,8 +3586,11 @@ button.mfp-arrow {
     padding: 0;
     position: relative;
 }
-.form1 label {
+/* .form1 label {
     display: none;
+} */
+label span{
+    color: rgb(255, 39, 32);
 }
 .form1 .col1 {
     float: left;
@@ -4542,7 +4619,7 @@ button.mfp-arrow {
     position: relative;
     line-height: 1.2em;
 }
-.butn-dark a {
+.butn-dark a, .butn-dark p {
     font-weight: 400;
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
@@ -4554,7 +4631,8 @@ button.mfp-arrow {
     font-size: 15px;
     letter-spacing: 3px;
 }
-.butn-dark a:after {
+
+.butn-dark a:after, .butn-dark p:after {
     content: '';
     width: 0;
     height: 100%;
@@ -4567,17 +4645,17 @@ button.mfp-arrow {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-.butn-dark a span {
+.butn-dark a span, .butn-dark p span {
     position: relative;
     z-index: 2;
 }
-.butn-dark a:hover:after {
+.butn-dark a:hover:after, .butn-dark p:hover:after {
     width: 100%;
     left: 0;
     -webkit-transition: width 0.3s ease;
     transition: width 0.3s ease;
 }
-.butn-dark a:hover span {
+.butn-dark a:hover span, .butn-dark p:hover span {
     color: #fff;
 }
 /* light */
@@ -4585,7 +4663,7 @@ button.mfp-arrow {
     position: relative;
     line-height: 1.2em;
 }
-.butn-light a {
+.butn-light a, .butn-light p {
     font-weight: 400;
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
@@ -4598,7 +4676,12 @@ button.mfp-arrow {
     letter-spacing: 3px;
     border: 1px solid rgba(255,255,255,0.5);
 }
-.butn-light a:after {
+
+.butn-light p{
+    color: #222;
+    background-color: rgba(34, 34, 34, 0.168);
+}
+.butn-light a:after, .butn-light p:after {
     content: '';
     width: 0;
     height: 100%;
@@ -4610,17 +4693,20 @@ button.mfp-arrow {
     transition: all 0.3s ease;
     background: #fff;
 }
-.butn-light a span {
+.butn-light p:after{
+    background-color: var(--buttons);
+}
+.butn-light a span, .butn-light p span {
     position: relative;
     z-index: 2;
 }
-.butn-light a:hover:after {
+.butn-light a:hover:after, .butn-light p:hover:after {
     width: 100%;
     left: 0;
     -webkit-transition: width 0.3s ease;
     transition: width 0.3s ease;
 }
-.butn-light a:hover span {
+.butn-light a:hover span, .butn-light p:hover span {
     color: var(--title);
 }
 
