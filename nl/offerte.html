@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="nl">
 
 <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>Amw-veranda</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -15,8 +15,8 @@
 
     <link rel="shortcut icon" href="/img/logo.png" type="image/png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap">
-    <link rel="stylesheet" href="css/plugin.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/plugin.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50" data-language="dutch">
@@ -41,22 +41,18 @@
         <!-- Logo -->
         <div class="cappa-logo">
             <a href="index.html">
-                <!-- <img src="img/logo-dark.png" class="logo-img" alt=""> -->
-                <!-- <div> <i class="star"></i> <i class="star"></i> <i class="star"></i> <i class="star"></i> <i
-                        class="star"></i> </div>
-                <h2>AMW<span>Veranda</span></h2> -->
                 <h2><img src="/img/logo.png" style="width:150px; height:100px;"></h2>
             </a>
         </div>
         <!-- Menu -->
         <nav class="cappa-main-menu">
             <ul>
-                <li><a href='/index.html'>Home</a></li>
-                <li><a href='/over.html'>Over Ons</a></li>
-                <li><a href='/diensten.html'> Diensten</a></li>
-                <li><a href="/gallerij.html">Gallerij</a></li>
-                <li class='active'><a href='/offerte.html'>Offerte</a></li>
-                <li><a href='/contact.html'>Contact</a></li>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='over.html'>Over Ons</a></li>
+                <li><a href='diensten.html'> Diensten</a></li>
+                <li><a href="gallerij.html">Gallerij</a></li>
+                <li  class='active'><a href='offerte.html'>Offerte</a></li>
+                <li><a href='contact.html'>Contact</a></li>
                 <!-- class='cappa-sub' voor dropdown die we niet hebben -->
             </ul>
         </nav>
@@ -69,6 +65,13 @@
                         <div class="text">
                             <p>Bel ons!</p> <a href="tel:+31 6 362 93 866">+31 6 362 93 866</a>
                         </div>
+                    </div>
+                    <div class="footer-language"> <i class="lni ti-world"></i>
+                        <select class="language-select" onchange="changeLanguage(this.value)">
+                            <option value="en">English</option>
+                            <option value="de">Deutschland</option>
+                            <option value="nl">Nederlands</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -375,100 +378,104 @@
         </div>
         
     </section>  
-<!-- Footer -->
-<footer class="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="footer-column footer-about">
-                        <h3 class="footer-title">Over AMW veranda</h3>
-                        <p class="footer-about-text">AMW Veranda biedt elegantie en comfort met haar
-                            hoogwaardige veranda's. Het bedrijf staat bekend om de beste prijzen in de markt en
-                            een volledige coördinatie van realisatie tot afwerking. Geniet elk seizoen van uw
-                            tuin in stijl met een veranda van AMW.</p>
-                        <div class="footer-language"> <i class="lni ti-world"></i>
-                            <select onchange="location = this.value;">
-                                <option value="http://duruthemes.com/">English</option>
-                                <option value="http://duruthemes.com/">German</option>
-                            </select>
+       <!-- Footer -->
+       <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-column footer-about">
+                            <h3 class="footer-title">Over AMW veranda</h3>
+                            <p class="footer-about-text">AMW Veranda biedt elegantie en comfort met haar
+                                hoogwaardige veranda's. Het bedrijf staat bekend om de beste prijzen in de markt en
+                                een volledige coördinatie van realisatie tot afwerking. Geniet elk seizoen van uw
+                                tuin in stijl met een veranda van AMW.</p>
+                            <div class="footer-language"> <i class="lni ti-world"></i>
+                                <select class="language-select" onchange="changeLanguage(this.value)">
+                                    <option value="en">English</option>
+                                    <option value="de">Deutschland</option>
+                                    <option value="nl">Nederlands</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 offset-md-1">
-                    <div class="footer-column footer-explore clearfix">
-                        <h3 class="footer-title">Explore</h3>
-                        <ul class="footer-explore-list list-unstyled">
-                            <li><a href='/index.html'>Home</a></li>
-                            <li><a href='/over.html'>Over Ons</a></li>
-                            <li><a href='/diensten.html'> Diensten</a></li>
-                            <li><a href="/gallerij.html">Gallerij</a></li>
-                            <li><a href='/offerte.html'>Offerte</a></li>
-                            <li><a href='/contact.html'>Contact</a></li>
-                        </ul>
+                    <div class="col-md-3 offset-md-1">
+                        <div class="footer-column footer-explore clearfix">
+                            <h3 class="footer-title">Ontdek</h3>
+                            <ul class="footer-explore-list list-unstyled">
+                                <li><a href='index.html'>Home</a></li>
+                                <li><a href='over.html'>Over Ons</a></li>
+                                <li><a href='diensten.html'> Diensten</a></li>
+                                <li><a href="gallerij.html">Gallerij</a></li>
+                                <li><a href='offerte.html'>Offerte</a></li>
+                                <li><a href='contact.html'>Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-               
-                <div class="col-md-4">
-                    <div class="footer-column footer-contact">
-                        <h3 class="footer-title">Contact</h3>
-                        <p class="footer-contact-text">Jan van de Capellelaan 60,
-                            5642 LE Eindhoven. Nederland
-                        </p>
-                        <div class="footer-contact-info">
-                            <p class="footer-contact-phone"><span class="ti-mobile  "></span> +31 6 362 93 866
+                    <div class="col-md-4">
+                        <div class="footer-column footer-contact">
+                            <h3 class="footer-title">Contact</h3>
+                            <p class="footer-contact-text">Jan van de Capellelaan 60,
+                                5642 LE Eindhoven. Nederland
                             </p>
-                            <p class="footer-contact-mail">info@amw-veranda.nl</p>
-                        </div>
-                        <div class="footer-about-social-list">
-                            <a href="#"><i class="ti-instagram"></i></a>
-                            <a href="#"><i class="ti-twitter"></i></a>
-                            <a href="#"><i class="ti-youtube"></i></a>
-                            <a href="#"><i class="ti-facebook"></i></a>
-                            <a href="#"><i class="fa fa-whatsapp"></i></a>
+                            <div class="footer-contact-info">
+                                <p class="footer-contact-phone">
+                                    <a href="tel:+31636293866">
+                                      <span class="ti-mobile"></span> +31 6 362 93 866
+                                    </a>
+                                  </p>                                      
+                                <p class="footer-contact-mail">
+                                    <a href="mailto:info@amw-veranda.nl" target="_blank">info@amw-veranda.nl</a>
+                                  </p>
+                            </div>
+                            <div class="footer-about-social-list">
+                                <a href="https://www.instagram.com/amwveranda/" target="_blank" data-network="instagram"><i class="ti-instagram"></i></a>
+                                <a href="https://www.facebook.com/terrasse.montage" target="_blank" data-network="facebook"><i class="ti-facebook"></i></a>
+                                <a href="https://wa.me/31636293866" target="_blank" data-network="whatsapp"><i class="fa fa-whatsapp"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="footer-bottom-inner">
-                        <p class="footer-bottom-copy-right">
-                            © Copyright 2023 website made by 
-                            <a href="https://www.linkedin.com/in/zenoubagouram/" target="_blank">Zineb Gouram</a> & 
-                            <a href="https://www.linkedin.com/in/ranim-m-984169200" target="_blank">Ranim Mohammed</a>
-                        </p>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-bottom-inner">
+                            <p class="footer-bottom-copy-right">
+                                © Copyright 2023 | Website is gemaakt door
+                                <a href="https://www.linkedin.com/in/zenoubagouram/" target="_blank">Zineb Gouram</a> & 
+                                <a href="https://www.linkedin.com/in/ranim-m-984169200" target="_blank">Ranim Mohammed</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-</div>
+    </footer>
 
-<!-- jQuery -->
-<script src="/js/modernizr-2.6.2.min.js"></script>
-<script src="/js/imagesloaded.pkgd.min.js"></script>
-<script src="/js/isotope.js"></script>
-<script src="/js/pace.js"></script>
-<script src="/js/popper.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="js/scrollIt.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/jquery.magnific-popup.js"></script>
-<script src="js/YouTubePopUp.js"></script>
-<script src="js/select2.js"></script>
-<script src="js/datepicker.js"></script>
-<script src="js/smooth-scroll.min.js"></script>
-<script src="js/custom.js"></script>
-<script src="/js/offerte.js"></script>
-<script src="/js/submission.js"></script>
+    </div>
+    <!-- jQuery -->
+    <script src="/js/language.js"></script>
+    <script src="/js/modernizr-2.6.2.min.js"></script>
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/isotope.js"></script>
+    <script src="/js/pace.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/scrollIt.min.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/jquery.stellar.min.js"></script>
+    <script src="/js/jquery.magnific-popup.js"></script>
+    <script src="/js/YouTubePopUp.js"></script>
+    <script src="/js/select2.js"></script>
+    <script src="/js/datepicker.js"></script>
+    <script src="/js/smooth-scroll.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="/js/offerte.js"></script>
+    <script src="/js/submission.js"></script>
 
 
 </body>

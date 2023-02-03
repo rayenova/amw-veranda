@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Amw-veranda</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="/css/themify.icons.css"/>
+
+    <link rel="shortcut icon" href="/img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap">
+    <link rel="stylesheet" href="/css/plugin.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+        </div>
+    </div>
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Sidebar Section -->
+    <a href="#" class="js-cappa-nav-toggle cappa-nav-toggle"><i></i></a>
+    <aside id="cappa-aside">
+        <!-- Logo -->
+        <div class="cappa-logo">
+            <a href="index.html">
+                <h2><img src="/img/logo.png" style="width:150px; height:100px;"></h2>
+            </a>
+        </div>
+        <!-- Menu -->
+        <nav class="cappa-main-menu">
+            <ul>
+                <li class='active'><a href='index.html'>Startseite</a></li>
+                <li><a href='over.html'>Über uns</a></li>
+                <li><a href='diensten.html'> Dienstleistungen</a></li>
+                <li><a href="gallerij.html">Galerie</a></li>
+                <li><a href='offerte.html'>Angebot</a></li>
+                <li><a href='contact.html'>Kontakt</a></li>
+            </ul>
+        </nav>
+        <!-- Sidebar Footer -->
+        <div class="cappa-footer">
+            <div class="footer-column footer-contact">
+                <div class="footer-contact-info">
+                    <div class="reservations">
+                        <div class="icon"><span class="ti-mobile"></span></div>
+                        <div class="text">
+                            <p>Rufen Sie uns an!</p> <a href="tel:+31 6 362 93 866">+31 6 362 93 866</a>
+                        </div>
+                    </div>
+                    <div class="footer-language"> <i class="lni ti-world"></i>
+                        <select class="language-select" onchange="changeLanguage(this.value)">
+                            <option value="en">English</option>
+                            <option value="de">Deutschland</option>
+                            <option value="nl">Nederlands</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- Main -->
+    <div id="cappa-main">
+        <!-- Slider -->
+        <header class="header slider-fade">
+            <div class="owl-carousel owl-theme">
+                <!-- Die Opazität auf dem Bild wird mit "data-overlay-dark="number" erstellt. Du kannst es mit den Zahlen 0-9 ändern. -->
+                <div class="text-center item bg-img" data-overlay-dark="3" data-background="/img/index/veranda1.jpg">
+                    <div class="v-middle caption">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 offset-md-1"> 
+                                    <h4>Erstelle deine eigene private Oase mit einer maßgeschneiderten Veranda,</h4>
+                                    <h1>Genieße ein luxuriöses Erlebnis!</h1>
+                                    <div class="butn-light mt-30 mb-30"> <a href="diensten.html">
+                                        <span>Unsere Dienstleistungen ansehen</span></a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center item bg-img" data-overlay-dark="3" data-background="/img/index/veranda2.jpg">
+                    <div class="v-middle caption">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 offset-md-1"> 
+                                    <h4>Entdecke die Vielseitigkeit einer Veranda,
+                                    </h4>
+                                    <h1>Genieße das ganze Jahr über.</h1>
+                                    <div class="butn-light mt-30 mb-30"> <a href="diensten.html">
+                                        <span>Unsere Dienstleistungen ansehen</span></a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center item bg-img" data-overlay-dark="3" data-background="/img/index/veranda3.jpg">
+                    <div class="v-middle caption">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 offset-md-1"> 
+                                    <h4>Erhöhe den Wert deines Hauses mit einer schönen Veranda.</h4>
+                                    <h1>Investition in deinen Komfort-Stil.</h1>
+                                    <div class="butn-light mt-30 mb-30"> <a href="diensten.html">
+                                        <span>Unsere Dienstleistungen ansehen</span></a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- over ons -->
+        <section class="about section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp"> 
+                        <div class="section-subtitle">AMW Veranda</div>
+                        <div class="section-title">Verwandeln Sie Ihren Außenbereich mit einer wunderschönen AMW Veranda.</div>
+                        <p>Mit einer AMW Veranda steigern Sie nicht nur den Wert Ihres Hauses, sondern schaffen auch zusätzlichen Wohnraum.
+                            Egal, ob Sie auf der Suche nach einem modernen, cleanen Look oder einer klassischen Veranda sind, AMW bietet verschiedene Stile und Materialien.
+                            Genießen Sie das ganze Jahr über Ihren Außenbereich, unabhängig vom Wetter und entdecken Sie, wie wunderbar es ist, die Trennung zwischen Innen und Außen zu verwischen.
+                            AMW Veranda bietet Ihnen die Möglichkeit, Ihre Veranda maßgeschneidert zu gestalten, so dass Sie sicher sein können, dass Ihre Veranda perfekt zu Ihren Wünschen und Ihrem Stil passt.</p>
+                    </div>
+                    <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp"> <img src="/img/index/veranda6.jpg" alt="" class="mt-90 mb-30"> </div>
+                    <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp"> <img src="/img/index/veranda7.jpg" alt=""> </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- service -->
+        <section class="pricing section-padding bg-black">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="section-subtitle"><span>Unser Service,</span></div>
+                     <div class="section-title"><span>Zusätzlicher Service</span></div>
+                     <p class="color-2">Eine Veranda ist eine Erweiterung Ihres Hauses und eine wunderbare Möglichkeit, die Natur ins Haus zu bringen. Es schafft nicht nur zusätzlichen Wohnraum, sondern erhöht auch den Wert Ihres Hauses. Bei AMW Veranda können Sie die besten Preise für eine wunderschöne Veranda genießen, ohne Abstriche an Qualität und Stil zu machen. Lassen Sie sich von der Eleganz einer Veranda verführen und bringen Sie Atmosphäre und Luxus in Ihr Zuhause. Wählen Sie AMW Veranda und erleben Sie die perfekte Kombination aus Preis und Qualität.</p>
+                     <div class="reservations mb-30">
+                        <div class="icon"><span class="ti-mobile"></span></div>
+                        <div class="text">
+                           <p class="color-2">Für weitere Informationen können Sie anrufen </p> <a href="tel:+31 6 362 93 866">+31 6 362 93 866</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-8">
+                     <div class="owl-carousel owl-theme">
+                        <div class="pricing-card"> <img src="/img/service/1.jpeg" alt="">
+                           <div class="desc">
+                              <div class="name">Einfach aber robust</div>
+                              <div class="amount"><span>ab</span> €999,-</div>
+                              <ul class="list-unstyled list">
+                                 <li><i class="ti-check"></i> Verfügbar in 2 Farben; </li>
+                                 <li><i class="ti-check"></i> Dachbedeckung ist Glas oder Polycarbonat; </li>
+                                 <li><i class="ti-check"></i> Auch für Selbstmontage geeignet; </li>
+                                 <li><i class="ti-check"></i> Optionaler Messservice und Maßanfertigung; </li>
+                                 <li><i class="ti-check"></i> Standard 2 Jahre Garantie. </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="pricing-card"> 
+                            <img src="/img/service/2.jpg" alt="">
+                            <div class="desc">
+                              <div class="name">Klassische Veranda</div>
+                              <div class="amount"><span>ab</span> €1699,-</div>
+                              <ul class="list-unstyled list">
+                                <li><i class="ti-check"></i> In 3 Stilen erhältlich</li>
+                                <li><i class="ti-check"></i> In 2 Farben erhältlich; </li>
+                                <li><i class="ti-check"></i> Dachbedeckung ist Glas oder Polycarbonat; </li>
+                                <li><i class="ti-check"></i> Viele Auswahlmöglichkeiten; </li>
+                                <li><i class="ti-check"></i> Inklusive Messservice und Maßanfertigung; </li>
+                                <li><i class="ti-check"></i> Standardmäßig 3 Jahre Garantie. </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="pricing-card"> 
+                            <img src="/img/service/3.jpeg" alt="">
+                            <div class="desc">
+                              <div class="name">Sauber und modernes Design</div>
+                              <div class="amount"><span>ab</span> €4299,-</div>
+                              <ul class="list-unstyled list">
+                                <li><i class="ti-check"></i> In 2 Farben erhältlich; </li>
+                                <li><i class="ti-check"></i> Dachbedeckung 10mm Sicherheitsglas; </li>
+                                <li><i class="ti-check"></i> Keine sichtbare Dachneigung; </li>
+                                <li><i class="ti-check"></i> Inklusive Messservice und Maßanfertigung; </li>
+                                <li><i class="ti-check"></i> Standardmäßig 5 Jahre Garantie. </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- diensten -->
+        <section class="services section-padding">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 p-0 animate-box" data-animate-effect="fadeInLeft">
+                  <div class="img left">
+                    <a href="services.html"><img src="/img/index/veranda10.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div class="col-md-6 p-0 bg-cream valign animate-box" data-animate-effect="fadeInRight">
+                  <div class="content">
+                    <div class="cont text-left">
+                      <div class="info">
+                        <h6>unsere dienstleistungen</h6>
+                      </div>
+                      <h4>Unsere Dienstleistungen</h4>
+                      <p>
+                        Unsere Wintergärten werden nach Ihren Wünschen angefertigt und entworfen. Wir übernehmen die vollständige Realisierung Ihres Wintergartens und Sie können den Grad der Fertigstellung selbst auswählen. 
+                        Alle Stile und Materialien sind möglich und wir übernehmen die vollständige Realisierung. Ein Wintergarten ist ein Mehrwert für Ihr Haus und schafft extra Wohnraum für jede Jahreszeit. Es bietet Schutz vor dem Wetter, bringt Licht ins Haus und ist für alle Jahreszeiten geeignet.
+                      </p>
+                      <div class="butn-dark"> <a href="services.html"><span>Erfahren Sie mehr über unsere Dienstleistungen</span></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!-- projecten -->
+        <section class="news section-padding bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-subtitle"><span>Projecten</span></div>
+                        <div class="section-title"><span>Unsere bekannten Projekte</span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="position-re o-hidden"> <img src="/img/index/11.jpg" alt="">
+                                    <div class="date">
+                                        <a href="gallerij.html"> <span>Okt</span> <i>10</i> </a>
+                                    </div>
+                                </div>
+                                <div class="con"> <span class="category">
+                                        <a href="gallerij.html">AMW - Veranda</a>
+                                    </span>
+                                    <h5><a href="gallerij.html">Terrassenüberdachung</a></h5>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="position-re o-hidden"> <img src="/img/index/veranda8.jpg" alt="">
+                                    <div class="date">
+                                        <a href="gallerij.html"> <span>Feb</span> <i>02</i> </a>
+                                    </div>
+                                </div>
+                                <div class="con"> <span class="category">
+                                        <a href="gallerij.html">AMW - Veranda</a>
+                                    </span>
+                                    <h5><a href="gallerij.html">Terrassenüberdachung</a></h5>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="position-re o-hidden"> <img src="/img/index/13.jpg" alt="">
+                                    <div class="date">
+                                        <a href="gallerij.html"> <span>Ma</span> <i>03</i> </a>
+                                    </div>
+                                </div>
+                                <div class="con"> <span class="category">
+                                        <a href="gallerij.html">AMW - Veranda</a>
+                                    </span>
+                                    <h5><a href="gallerij.html">Zusätzlicher Raum</a></h5>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="position-re o-hidden"> <img src="/img/index/14.jpg" alt="">
+                                    <div class="date">
+                                        <a href="gallerij.html"> <span>Feb</span> <i>21</i> </a>
+                                    </div>
+                                </div>
+                                <div class="con"> <span class="category">
+                                        <a href="gallerij.html">AMW - Veranda</a>
+                                    </span>
+                                    <h5><a href="gallerij.html">Schöne Atmosphäre</a></h5>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- expertise -->
+        <section class="services section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 bg-cream p-0 order2 valign animate-box" data-animate-effect="fadeInLeft">
+                        <div class="content">
+                            <div class="cont text-left">
+                                <div class="info">
+                                    <h6>AMW-Veranda</h6>
+                                </div>
+                                <h4>Unsere Spezialität</h4>
+                                <p>
+                                    AMW Veranda ist spezialisiert auf verschiedene Arten von Veranden. Das bedeutet, dass sie den Kunden mit einer Veranda versorgen können, die ihren spezifischen Wünschen und Erwartungen entspricht. 
+                                    Ob der Kunde nun eine traditionelle oder moderne Veranda sucht, AMW Veranda ist in der Lage, jedes Design auszuführen. Sie übernehmen die volle Verantwortung für die Umsetzung der Veranda, wodurch sich der Kunde keine Sorgen über die Platzierung und Fertigstellung machen muss. 
+                                    AMW Veranda ist der Verandaspezialist für jeden, der auf der Suche nach einer einzigartigen und maßgeschneiderten Lösung ist.
+                                </p>
+                                <div class="butn-dark"> <a href="offerte.html"><span>Fragen Sie ein Angebot an</span></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-0 order1 animate-box" data-animate-effect="fadeInRight">
+                        <div class="img">
+                            <a href="offerte.html"><img src="/img/index/veranda10.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="testimonials">
+            <div class="background bg-img bg-fixed section-padding pb-0" data-background="/img/index/veranda9.jpg" data-overlay-dark="3">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                    <div class="testimonials-box">
+                      <div class="head-box">
+                        <!-- <h6>Reviews</h6> -->
+                        <h4>Haben Sie weitere Fragen?</h4>
+                        <div class="line"></div>
+                      </div>
+                      <p>Für weitere Fragen können Sie über die Website Kontakt aufnehmen oder anrufen unter der Telefonnummer.</p>
+                      <div class="butn-light mt-30 mb-30">
+                        <a href="contact.html" data-scroll-nav="1">
+                          <span>Kontakt Aufnehmen</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footer-column footer-about">
+                                <h3 class="footer-title">Über AMW Veranda</h3>
+                                <p class="footer-about-text">
+                                    AMW Veranda bietet Eleganz und Komfort mit seinen hochwertigen Veranden. Das Unternehmen ist für die besten Preise auf dem Markt und eine vollständige Koordination von Realisierung bis Abschluss bekannt.
+                                     Genießen Sie jede Jahreszeit in Ihrem Garten mit Stil mit einer Veranda von AMW.</p>
+                                <div class="footer-language"> <i class="lni ti-world"></i>
+                                    <select class="language-select" onchange="changeLanguage(this.value)">
+                                        <option value="en">English</option>
+                                        <option value="de">Deutschland</option>
+                                        <option value="nl">Nederlands</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 offset-md-1">
+                            <div class="footer-column footer-explore clearfix">
+                                <h3 class="footer-title">Erkunden</h3>
+                                <ul class="footer-explore-list list-unstyled">
+                                    <li><a href='index.html'>Startseite</a></li>
+                                    <li><a href='over.html'>Über uns</a></li>
+                                    <li><a href='diensten.html'>Dienstleistungen</a></li>
+                                    <li><a href="gallerij.html">Galerie</a></li>
+                                    <li><a href='offerte.html'>Angebot</a></li>
+                                    <li><a href='contact.html'>Kontakt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-column footer-contact">
+                                <h3 class="footer-title">Kontakt</h3>
+                                <p class="footer-contact-text">Jan van de Capellelaan 60,
+                                    5642 LE Eindhoven. Niederlande
+                                </p>
+                                <div class="footer-contact-info">
+                                    <p class="footer-contact-phone">
+                                        <a href="tel:+31636293866">
+                                          <span class="ti-mobile"></span> +31 6 362 93 866
+                                        </a>
+                                      </p>                                      
+                                    <p class="footer-contact-mail">
+                                        <a href="mailto:info@amw-veranda.nl" target="_blank">info@amw-veranda.nl</a>
+                                      </p>
+                                </div>
+                                <div class="footer-about-social-list">
+                                    <a href="https://www.instagram.com/amwveranda/" target="_blank" data-network="instagram"><i class="ti-instagram"></i></a>
+                                    <a href="https://www.facebook.com/terrasse.montage" target="_blank" data-network="facebook"><i class="ti-facebook"></i></a>
+                                    <a href="https://wa.me/31636293866" target="_blank" data-network="whatsapp"><i class="fa fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-bottom-inner">
+                                <p class="footer-bottom-copy-right">
+                                    © Copyright 2023 | Website erstellt von
+                                    <a href="https://www.linkedin.com/in/zenoubagouram/" target="_blank">Zineb Gouram</a> & 
+                                    <a href="https://www.linkedin.com/in/ranim-m-984169200" target="_blank">Ranim Mohammed</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- jQuery -->
+    <script src="/js/language.js"></script>
+    <script src="/js/modernizr-2.6.2.min.js"></script>
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/isotope.js"></script>
+    <script src="/js/pace.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/scrollIt.min.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/jquery.stellar.min.js"></script>
+    <script src="/js/jquery.magnific-popup.js"></script>
+    <script src="/js/YouTubePopUp.js"></script>
+    <script src="/js/select2.js"></script>
+    <script src="/js/datepicker.js"></script>
+    <script src="/js/smooth-scroll.min.js"></script>
+    <script src="/js/custom.js"></script>
+</body>
+
+</html>
