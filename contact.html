@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <link rel="stylesheet" href="/css/themify.icons.css"/>
+    <link rel="stylesheet" href="/css/themify.icons.css" />
 
     <link rel="shortcut icon" href="/img/logo.png" type="image/png" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap">
     <link rel="stylesheet" href="/css/plugin.css" />
     <link rel="stylesheet" href="/css/style.css" />
 </head>
@@ -51,7 +52,7 @@
                 <li><a href='diensten.html'> Diensten</a></li>
                 <li><a href="gallerij.html">Gallerij</a></li>
                 <li><a href='offerte.html'>Offerte</a></li>
-                <li  class='active'><a href='contact.html'>Contact</a></li>
+                <li class='active'><a href='contact.html'>Contact</a></li>
                 <!-- class='cappa-sub' voor dropdown die we niet hebben -->
             </ul>
         </nav>
@@ -125,17 +126,14 @@
                     <div class="col-md-5 mb-30 offset-md-1">
                         <h3>Get in touch</h3>
                         <form method="post" class="contact__form"
-                            action="https://formsubmit.co/89ed89a61a02dd5d6df62ce3c5116adf" methoud="POST"  action="https://formspree.io/f/xvonzjwq"
-                            method="POST">
-                            <!-- form message -->
-                            <!--Captcha disabled-->
+                            action="https://formsubmit.co/89ed89a61a02dd5d6df62ce3c5116adf">
                             <input type="hidden" name="_captcha" value="false">
-                            <!--Terug naar index voor nu, later een thank you pagina erbij-->
                             <input type="hidden" name="_next" value="https://amw-veranda-tryout.netlify.app/index.html">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                                        Your message was sent successfully. </div>
+                                        Your message was sent successfully.
+                                    </div>
                                 </div>
                             </div>
                             <!-- form elements -->
@@ -157,10 +155,11 @@
                                         placeholder="Beschrijving van het onderwerp of vraag*" required></textarea>
                                 </div>
                                 <div class="col-md-12">
-                                    <button class="butn-dark"><a href="#"><span>Send Message</span></a></button>
+                                    <button class="butn-dark" type="submit"><span>Send Message</span></button>
                                 </div>
                             </div>
                         </form>
+
                     </div>
                 </div>
                 <!-- Map Section -->
@@ -169,89 +168,96 @@
                         <!-- <iframe
                             src="https://goo.gl/maps/r4M9guA6YnBZt9KD7"
                             width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.10423565052!2d5.517513615715185!3d51.437879579623846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6d8902a7937c1%3A0xcec1f539b750e6ce!2sJan%20van%20de%20Capellelaan%2060%2C%205642%20LE%20Eindhoven!5e0!3m2!1snl!2snl!4v1675300777955!5m2!1snl!2snl" 
-                            width="100%" height="600" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.10423565052!2d5.517513615715185!3d51.437879579623846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6d8902a7937c1%3A0xcec1f539b750e6ce!2sJan%20van%20de%20Capellelaan%2060%2C%205642%20LE%20Eindhoven!5e0!3m2!1snl!2snl!4v1675300777955!5m2!1snl!2snl"
+                            width="100%" height="600" style="border:0;" allowfullscreen="yes" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
-        </section>                        
-        
-       <!-- Footer -->
-       <footer class="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="footer-column footer-about">
-                            <h3 class="footer-title">Over AMW veranda</h3>
-                            <p class="footer-about-text">AMW Veranda biedt elegantie en comfort met haar
-                                hoogwaardige veranda's. Het bedrijf staat bekend om de beste prijzen in de markt en
-                                een volledige coördinatie van realisatie tot afwerking. Geniet elk seizoen van uw
-                                tuin in stijl met een veranda van AMW.</p>
-                            <div class="footer-language"> <i class="lni ti-world"></i>
-                                <select class="language-select" onchange="changeLanguage(this.value)">
-                                    <option value="en">English</option>
-                                    <option value="de">Deutschland</option>
-                                    <option value="nl">Nederlands</option>
-                                </select>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footer-column footer-about">
+                                <h3 class="footer-title">Over AMW veranda</h3>
+                                <p class="footer-about-text">AMW Veranda biedt elegantie en comfort met haar
+                                    hoogwaardige veranda's. Het bedrijf staat bekend om de beste prijzen in de markt en
+                                    een volledige coördinatie van realisatie tot afwerking. Geniet elk seizoen van uw
+                                    tuin in stijl met een veranda van AMW.</p>
+                                <div class="footer-language"> <i class="lni ti-world"></i>
+                                    <select class="language-select" onchange="changeLanguage(this.value)">
+                                        <option value="en">English</option>
+                                        <option value="de">Deutschland</option>
+                                        <option value="nl">Nederlands</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3 offset-md-1">
-                        <div class="footer-column footer-explore clearfix">
-                            <h3 class="footer-title">Ontdek</h3>
-                            <ul class="footer-explore-list list-unstyled">
-                                <li><a href='index.html'>Home</a></li>
-                                <li><a href='over.html'>Over Ons</a></li>
-                                <li><a href='diensten.html'> Diensten</a></li>
-                                <li><a href="gallerij.html">Gallerij</a></li>
-                                <li><a href='offerte.html'>Offerte</a></li>
-                                <li><a href='contact.html'>Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="footer-column footer-contact">
-                            <h3 class="footer-title">Contact</h3>
-                            <p class="footer-contact-text">Jan van de Capellelaan 60,
-                                5642 LE Eindhoven. Nederland
-                            </p>
-                            <div class="footer-contact-info">
-                                <p class="footer-contact-phone">
-                                    <a href="tel:+31636293866">
-                                      <span class="ti-mobile"></span> +31 6 362 93 866
-                                    </a>
-                                  </p>                                      
-                                <p class="footer-contact-mail">
-                                    <a href="mailto:info@amw-veranda.nl" target="_blank">info@amw-veranda.nl</a>
-                                  </p>
-                            </div>
-                            <div class="footer-about-social-list">
-                                <a href="https://www.instagram.com/amwveranda/" target="_blank" data-network="instagram"><i class="ti-instagram"></i></a>
-                                <a href="https://www.facebook.com/terrasse.montage" target="_blank" data-network="facebook"><i class="ti-facebook"></i></a>
-                                <a href="https://wa.me/31636293866" target="_blank" data-network="whatsapp"><i class="fa fa-whatsapp"></i></a>
+                        <div class="col-md-3 offset-md-1">
+                            <div class="footer-column footer-explore clearfix">
+                                <h3 class="footer-title">Ontdek</h3>
+                                <ul class="footer-explore-list list-unstyled">
+                                    <li><a href='index.html'>Home</a></li>
+                                    <li><a href='over.html'>Over Ons</a></li>
+                                    <li><a href='diensten.html'> Diensten</a></li>
+                                    <li><a href="gallerij.html">Gallerij</a></li>
+                                    <li><a href='offerte.html'>Offerte</a></li>
+                                    <li><a href='contact.html'>Contact</a></li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="footer-bottom-inner">
-                            <p class="footer-bottom-copy-right">
-                                © Copyright 2023 | Website is gemaakt door
-                                <a href="https://www.linkedin.com/in/zenoubagouram/" target="_blank">Zineb Gouram</a> & 
-                                <a href="https://www.linkedin.com/in/ranim-m-984169200" target="_blank">Ranim Mohammed</a>
-                            </p>
+                        <div class="col-md-4">
+                            <div class="footer-column footer-contact">
+                                <h3 class="footer-title">Contact</h3>
+                                <p class="footer-contact-text">Jan van de Capellelaan 60,
+                                    5642 LE Eindhoven. Nederland
+                                </p>
+                                <div class="footer-contact-info">
+                                    <p class="footer-contact-phone">
+                                        <a href="tel:+31636293866">
+                                            <span class="ti-mobile"></span> +31 6 362 93 866
+                                        </a>
+                                    </p>
+                                    <p class="footer-contact-mail">
+                                        <a href="mailto:info@amw-veranda.nl" target="_blank">info@amw-veranda.nl</a>
+                                    </p>
+                                </div>
+                                <div class="footer-about-social-list">
+                                    <a href="https://www.instagram.com/amwveranda/" target="_blank"
+                                        data-network="instagram"><i class="ti-instagram"></i></a>
+                                    <a href="https://www.facebook.com/terrasse.montage" target="_blank"
+                                        data-network="facebook"><i class="ti-facebook"></i></a>
+                                    <a href="https://wa.me/31636293866" target="_blank" data-network="whatsapp"><i
+                                            class="fa fa-whatsapp"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-bottom-inner">
+                                <p class="footer-bottom-copy-right">
+                                    © Copyright 2023 | Website is gemaakt door
+                                    <a href="https://www.linkedin.com/in/zenoubagouram/" target="_blank">Zineb
+                                        Gouram</a> &
+                                    <a href="https://www.linkedin.com/in/ranim-m-984169200" target="_blank">Ranim
+                                        Mohammed</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </div>
     <!-- jQuery -->
