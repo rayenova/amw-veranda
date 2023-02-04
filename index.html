@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Amw-veranda</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="/css/themify.icons.css"/>
+
+    <link rel="shortcut icon" href="/img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap">
+    <link rel="stylesheet" href="/css/plugin.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+        </div>
+    </div>
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Sidebar Section -->
+    <a href="#" class="js-cappa-nav-toggle cappa-nav-toggle"><i></i></a>
+    <aside id="cappa-aside">
+        <!-- Logo -->
+        <div class="cappa-logo">
+            <a href="index.html">
+                <h2><img src="/img/logo.png" style="width:150px; height:100px;"></h2>
+            </a>
+        </div>
+        <!-- Menu -->
+        <nav class="cappa-main-menu">
+            <ul>
+                <li class='active'><a href='index.html'>Home</a></li>
+                <li><a href='over.html'>Over Ons</a></li>
+                <li><a href='diensten.html'> Diensten</a></li>
+                <li><a href="gallerij.html">Gallerij</a></li>
+                <li><a href='offerte.html'>Offerte</a></li>
+                <li><a href='contact.html'>Contact</a></li>
+                <!-- class='cappa-sub' voor dropdown die we niet hebben -->
+            </ul>
+        </nav>
+        <!-- Sidebar Footer -->
+        <div class="cappa-footer">
+            <div class="footer-column footer-contact">
+                <div class="footer-contact-info">
+                    <div class="reservations">
+                        <div class="icon"><span class="ti-mobile"></span></div>
+                        <div class="text">
+                            <p>Bel ons!</p> <a href="tel:+31 6 362 93 866">+31 6 362 93 866</a>
+                        </div>
+                    </div>
+                    <div class="footer-language"> <i class="lni ti-world"></i>
+                        <select class="language-select" onchange="changeLanguage(this.value)">
+                            <option value="en">English</option>
+                            <option value="de">Deutschland</option>
+                            <option value="nl">Nederlands</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- Main -->
+    <div id="cappa-main">
+        <!-- Slider -->
+        <header class="header slider-fade">
+            <div class="owl-carousel owl-theme">
+                <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
+                <div class="text-center item bg-img" data-overlay-dark="3" data-background="/img/index/veranda1.jpg">
+                    <div class="v-middle caption">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 offset-md-1"> 
+                                    <h4>Creëer uw eigen privé-oase met een veranda op maat,</h4>
+                                    <h1>Geniet van een Luxe ervaring!</h1>
+                                    <div class="butn-light mt-30 mb-30"> <a href="diensten.html">
+                                        <span>Bekijk onze diensten</span></a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center item bg-img" data-overlay-dark="3" data-background="/img/index/veranda2.jpg">
+                    <div class="v-middle caption">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 offset-md-1"> 
+                                    <h4>Ontdek de veelzijdigheid van een veranda,
+                                    </h4>
+                                    <h1>Geniet het hele jaar door.</h1>
+                                    <div class="butn-light mt-30 mb-30"> <a href="diensten.html">
+                                        <span>Bekijk onze diensten</span></a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center item bg-img" data-overlay-dark="3" data-background="/img/index/veranda3.jpg">
+                    <div class="v-middle caption">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 offset-md-1"> 
+                                    <h4>Verhoog de waarde van uw woning met een mooie veranda.</h4>
+                                    <h1>Investering in je comfort stijl.</h1>
+                                    <div class="butn-light mt-30 mb-30"> <a href="diensten.html">
+                                        <span>Bekijk onze diensten</span></a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- over ons -->
+        <section class="about section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp"> 
+                        <div class="section-subtitle">AMW Veranda</div>
+                        <div class="section-title">Transformeer je buitenruimte met een prachtige AMW Veranda.</div>
+                        <p>Met een veranda van AMW verhoogt je niet alleen de waarde van jou huis, maar creëert je ook extra leefruimte. 
+                            Of je nu op zoek bent naar een moderne, strakke look of een klassieke veranda, AMW biedt verschillende stijlen en materialen. 
+                            Geniet het hele jaar door van uw buitenruimte, ongeacht het weer en ontdek hoe heerlijk het is om de scheiding tussen binnen en buiten te vervagen.
+                            AMW Veranda biedt u de mogelijkheid om uw veranda op maat te maken, zodat u er zeker van bent dat uw veranda perfect bij uw wensen en stijl past.</p>
+
+                    </div>
+                    <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp"> <img src="/img/index/veranda6.jpg" alt="" class="mt-90 mb-30"> </div>
+                    <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp"> <img src="/img/index/veranda7.jpg" alt=""> </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- service -->
+        <section class="pricing section-padding bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="section-subtitle"><span>Onze service,</span></div>
+                        <div class="section-title"><span>Extra Service</span></div>
+                        <p class="color-2">Een veranda is een uitbreiding van uw huis en een prachtige manier om de
+                            natuur in huis te halen. Het creëert niet alleen extra leefruimte, maar verhoogt ook de
+                            waarde van uw woning. Bij AMW Veranda kunt u genieten van de beste prijzen voor een
+                            prachtige veranda, zonder concessies te doen aan kwaliteit en stijl. Laat u verleiden door
+                            de elegantie van een veranda en breng sfeer en luxe in uw huis. Kies voor AMW Veranda en
+                            ervaar de perfecte combinatie van prijs en kwaliteit.</p>
+
+                        <div class="reservations mb-30">
+                            <div class="icon"><span class="ti-mobile"></span></div>
+                            <div class="text">
+                                <p class="color-2">Voor meer informatie, kunt u bellen naar </p> <a href="tel:+31 6 362 93 866">+31 6 362 93
+                                    866</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="owl-carousel owl-theme">
+                            <div class="pricing-card"> <img src="/img/service/1.jpeg" alt="">
+                                <div class="desc">
+                                    <div class="name">Simpel maar degelijk</div>
+                                    <div class="amount"><span>vanaf</span> €999,-</div>
+                                    <ul class="list-unstyled list">
+                                        <li><i class="ti-check"></i> Verkrijgbaar in 2 kleuren; </li>
+                                        <li><i class="ti-check"></i> Dakbedekking is glas of polycarbonaat; </li>
+                                        <li><i class="ti-check"></i> Ook geschikt voor zelfmontage; </li>
+                                        <li><i class="ti-check"></i> Optioneel inmeetservice en maatwerk; </li>
+                                        <li><i class="ti-check"></i> Standaard 2 jaar garantie. </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pricing-card"> <img src="/img/service/2.jpg" alt="">
+                                <div class="desc">
+                                    <div class="name">Klassiek veranda</div>
+                                    <div class="amount"><span>vanaf</span> €1699,-</div>
+                                    <ul class="list-unstyled list">
+                                        <li><i class="ti-check"></i> In 3 stijlen leverbaar</li>
+                                        <li><i class="ti-check"></i> Verkrijgbaar in 2 kleuren; </li>
+                                        <li><i class="ti-check"></i> Dakbedekking is glas of polycarbonaat; </li>
+                                        <li><i class="ti-check"></i> Ruime keuzemogelijkheden; </li>
+                                        <li><i class="ti-check"></i> Inclusief inmeetservice en maatwerk; </li>
+                                        <li><i class="ti-check"></i> Standaard 3 jaar garantie. </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pricing-card"> <img src="/img/service/3.jpeg" alt="">
+                                <div class="desc">
+                                    <div class="name">Strak en modern design</div>
+                                    <div class="amount"><span>vanaf</span> €4299,-</div>
+                                    <ul class="list-unstyled list">
+                                        <li><i class="ti-check"></i> Verkrijgbaar in 2 kleuren; </li>
+                                        <li><i class="ti-check"></i> Dakbedekking 10mm veiligheidsglas; </li>
+                                        <li><i class="ti-check"></i> Geen zichtbare dakhelling; </li>
+                                        <li><i class="ti-check"></i> Inclusief inmeetservice en maatwerk; </li>
+                                        <li><i class="ti-check"></i> Standaard 5 jaar garantie. </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- diensten -->
+        <section class="services section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 p-0 animate-box" data-animate-effect="fadeInLeft">
+                        <div class="img left">
+                            <a href="diensten.html"><img src="/img/index/veranda10.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-0 bg-cream valign animate-box" data-animate-effect="fadeInRight">
+                        <div class="content">
+                            <div class="cont text-left">
+                                <div class="info">
+                                    <h6>onze diensten</h6>
+                                </div>
+                                <h4>Onze diensten</h4>
+                                <p>
+                                    Onze veranda's zijn op maat gemaakt en ontworpen volgens uw wensen. Wij nemen de volledige realisatie van uw veranda op ons en u kunt de graad van afwerking zelf kiezen. 
+                                    Alle stijlen en materialen zijn mogelijk en wij nemen de volledige realisatie op ons. Een veranda is een meerwaarde voor uw woning en creëert extra leefruimte voor elk seizoen. Het biedt bescherming tegen het weer, haalt licht in huis en is geschikt voor alle seizoenen.
+                                </p>
+                                <div class="butn-dark"> <a href="diensten.html"><span>Zie Meer over onze diensten</span></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- projecten -->
+        <section class="news section-padding bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-subtitle"><span>Projecten</span></div>
+                        <div class="section-title"><span>Onze bekende projecten</span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="position-re o-hidden"> <img src="/img/index/11.jpg" alt="">
+                                    <div class="date">
+                                        <a href="gallerij.html"> <span>Okt</span> <i>10</i> </a>
+                                    </div>
+                                </div>
+                                <div class="con"> <span class="category">
+                                        <a href="gallerij.html">AMW - Veranda</a>
+                                    </span>
+                                    <h5><a href="gallerij.html">Terras Overkapping</a></h5>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="position-re o-hidden"> <img src="/img/index/veranda8.jpg" alt="">
+                                    <div class="date">
+                                        <a href="gallerij.html"> <span>Feb</span> <i>02</i> </a>
+                                    </div>
+                                </div>
+                                <div class="con"> <span class="category">
+                                        <a href="gallerij.html">AMW - Veranda</a>
+                                    </span>
+                                    <h5><a href="gallerij.html">Terras Overkapping</a></h5>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="position-re o-hidden"> <img src="/img/index/13.jpg" alt="">
+                                    <div class="date">
+                                        <a href="gallerij.html"> <span>Ma</span> <i>03</i> </a>
+                                    </div>
+                                </div>
+                                <div class="con"> <span class="category">
+                                        <a href="gallerij.html">AMW - Veranda</a>
+                                    </span>
+                                    <h5><a href="gallerij.html">Extra Ruimte</a></h5>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="position-re o-hidden"> <img src="/img/index/14.jpg" alt="">
+                                    <div class="date">
+                                        <a href="gallerij.html"> <span>Feb</span> <i>21</i> </a>
+                                    </div>
+                                </div>
+                                <div class="con"> <span class="category">
+                                        <a href="gallerij.html">AMW - Veranda</a>
+                                    </span>
+                                    <h5><a href="gallerij.html">Prachtige Sfeer</a></h5>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- expertise -->
+        <section class="services section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 bg-cream p-0 order2 valign animate-box" data-animate-effect="fadeInLeft">
+                        <div class="content">
+                            <div class="cont text-left">
+                                <div class="info">
+                                    <h6>AMW-Veranda</h6>
+                                </div>
+                                <h4>Onze specialiteit</h4>
+                                <p>
+                                    AMW Veranda is gespecialiseerd in allerlei soorten veranda's. Dit betekent dat ze de klant kunnen voorzien van een veranda die voldoet aan hun specifieke wensen en verwachtingen. 
+                                    Of de klant nu op zoek is naar een traditionele of moderne veranda, AMW Veranda is in staat om elk ontwerp uit te voeren. Ze nemen de volledige verantwoordelijkheid voor de realisatie van de veranda op zich, waardoor de klant zich geen zorgen hoeft te maken over de plaatsing en afwerking. 
+                                    AMW Veranda is dé veranda specialist voor iedereen die op zoek is naar een unieke en op maat gemaakte oplossing.
+                                </p>
+                                <div class="butn-dark"> <a href="offerte.html"><span>Vraag een offerte aan</span></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-0 order1 animate-box" data-animate-effect="fadeInRight">
+                        <div class="img">
+                            <a href="offerte.html"><img src="/img/index/veranda10.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="testimonials">
+            <div class="background bg-img bg-fixed section-padding pb-0" data-background="/img/index/veranda9.jpg"
+                data-overlay-dark="3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="testimonials-box">
+                                <div class="head-box">
+                                    <!-- <h6>Reviews</h6> -->
+                                    <h4>Heeft u meer vragen?</h4>
+                                    <div class="line"></div>
+                                </div>
+                               <p>Voor meer vragen kunt u contact opzoeken via de website of bellen via de telefoonnummer.</p>
+                               <div class="butn-light mt-30 mb-30"> <a href="contact.html" data-scroll-nav="1">
+                                <span>Contact Opnemen</span></a> 
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footer-column footer-about">
+                                <h3 class="footer-title">Over AMW veranda</h3>
+                                <p class="footer-about-text">AMW Veranda biedt elegantie en comfort met haar
+                                    hoogwaardige veranda's. Het bedrijf staat bekend om de beste prijzen in de markt en
+                                    een volledige coördinatie van realisatie tot afwerking. Geniet elk seizoen van uw
+                                    tuin in stijl met een veranda van AMW.</p>
+                                    <div id="footer-language"> <i class="lni ti-world"></i>
+                                        <select class="language-select" onchange="changeLanguage(this.value)">
+                                            <option value="en">English</option>
+                                            <option value="de">Deutschland</option>
+                                            <option value="nl">Nederlands</option>
+                                        </select>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 offset-md-1">
+                            <div class="footer-column footer-explore clearfix">
+                                <h3 class="footer-title">Explore</h3>
+                                <ul class="footer-explore-list list-unstyled">
+                                    <li><a href='index.html'>Home</a></li>
+                                    <li><a href='over.html'>Over Ons</a></li>
+                                    <li><a href='diensten.html'> Diensten</a></li>
+                                    <li><a href="gallerij.html">Gallerij</a></li>
+                                    <li><a href='offerte.html'>Offerte</a></li>
+                                    <li><a href='contact.html'>Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-column footer-contact">
+                                <h3 class="footer-title">Contact</h3>
+                                <p class="footer-contact-text">Jan van de Capellelaan 60,
+                                    5642 LE Eindhoven. Nederland
+                                </p>
+                                <div class="footer-contact-info">
+                                    <p class="footer-contact-phone">
+                                        <a href="tel:+31636293866">
+                                          <span class="ti-mobile"></span> +31 6 362 93 866
+                                        </a>
+                                      </p>                                      
+                                    <p class="footer-contact-mail">
+                                        <a href="mailto:info@amw-veranda.nl" target="_blank">info@amw-veranda.nl</a>
+                                      </p>
+                                </div>
+                                <div class="footer-about-social-list">
+                                    <a href="https://www.instagram.com/amwveranda/" target="_blank" data-network="instagram"><i class="ti-instagram"></i></a>
+                                    <a href="https://www.facebook.com/terrasse.montage" target="_blank" data-network="facebook"><i class="ti-facebook"></i></a>
+                                    <a href="https://wa.me/31636293866" target="_blank" data-network="whatsapp"><i class="fa fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-bottom-inner">
+                                <p class="footer-bottom-copy-right">
+                                    © Copyright 2023 | Website is gemaakt door
+                                    <a href="https://www.linkedin.com/in/zenoubagouram/" target="_blank">Zineb Gouram</a> & 
+                                    <a href="https://www.linkedin.com/in/ranim-m-984169200" target="_blank">Ranim Mohammed</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- jQuery -->
+    <script src="/js/language.js"></script>
+    <script src="/js/modernizr-2.6.2.min.js"></script>
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/isotope.js"></script>
+    <script src="/js/pace.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/scrollIt.min.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/jquery.stellar.min.js"></script>
+    <script src="/js/jquery.magnific-popup.js"></script>
+    <script src="/js/YouTubePopUp.js"></script>
+    <script src="/js/select2.js"></script>
+    <script src="/js/datepicker.js"></script>
+    <script src="/js/smooth-scroll.min.js"></script>
+    <script src="/js/custom.js"></script>
+</body>
+
+</html>
