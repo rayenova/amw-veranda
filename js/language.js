@@ -32,18 +32,18 @@ for (const select of languageSelects) {
   select.value = currentLanguage;
 
   select.addEventListener("change", function(event) {
-    let newUrl = currentUrl;
+    let newUrl = window.location.origin + pathname;
+    
     if (event.target.value !== "nl") {
       if (currentLanguage !== "nl") {
-        newUrl = currentUrl.replace(`/${currentLanguage}/`, `/${event.target.value}/`);
+        newUrl = window.location.origin + pathname.replace(`/${currentLanguage}/`, `/${event.target.value}/`);
       } else {
-        newUrl = `/${event.target.value}/${pathname}`;
+        newUrl = window.location.origin + `/${event.target.value}/${pathname}`;
       }
     } else {
       if (currentLanguage !== "nl") {
-        newUrl = currentUrl.replace(`/${currentLanguage}/`, "/");
+        newUrl = window.location.origin + pathname.replace(`/${currentLanguage}/`, "/");
       }
-      
     }
     location.href = newUrl;
   });
