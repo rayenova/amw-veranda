@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" data-language="dutch">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Preloader -->
     <div class="preloader-bg"></div>
     <div id="preloader">
@@ -46,12 +46,11 @@
         <nav class="cappa-main-menu">
             <ul>
                 <li><a href='index.html'>Home</a></li>
-                <li><a href='over.html'>Over Ons</a></li>
-                <li><a href='diensten.html'> Diensten</a></li>
-                <li  class='active'><a href="gallerij.html">Gallerij</a></li>
-                <li><a href='offerte.html'>Offerte</a></li>
+                <li  class='active'><a href='over.html'>About us</a></li>
+                <li><a href='diensten.html'>Services</a></li>
+                <li><a href="gallerij.html">Gallery</a></li>
+                <li><a href='offerte.html'>Quote</a></li>
                 <li><a href='contact.html'>Contact</a></li>
-                <!-- class='cappa-sub' voor dropdown die we niet hebben -->
             </ul>
         </nav>
         <!-- Sidebar Footer -->
@@ -61,111 +60,86 @@
                     <div class="reservations">
                         <div class="icon"><span class="ti-mobile"></span></div>
                         <div class="text">
-                            <p>Bel ons!</p> <a href="tel:+31 6 362 93 866">+31 6 362 93 866</a>
+                            <p>Call us!</p> <a href="tel:+31 6 362 93 866">+31 6 362 93 866</a>
                         </div>
                     </div>
                     <div class="footer-language"> <i class="lni ti-world"></i>
-                        <select class="language-select" onchange="changeLanguage(this.value)">
-                            <option value="en">English</option>
-                            <option value="de">Deutschland</option>
-                            <option value="nl">Nederlands</option>
-                        </select>
-                    </div>
+                      <select class="language-select" onchange="changeLanguage(this.value)">
+                        <option value="de">Deutschland</option>  
+                        <option value="en">English</option>
+                          <option value="nl">Nederlands</option>
+                      </select>
+                  </div>
                 </div>
             </div>
         </div>
     </aside>
-
     <!-- Main -->
     <div id="cappa-main">
-
-        <!-- Parallax Image -->
-        <div class="banner-header full-height section-padding valign bg-img bg-fixed" data-overlay-dark="4" data-background="img/clients/3.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 offset-md-1 text-center">
-                        <h4>Afbeeldingen</h4>
-                        <h1>Onze Gallerij</h1>
-                        <div class="butn-light mt-30 mb-30"> <a href="#gallery"><span>Zie meer</span></a> </div>
-                    </div>
+    
+    <!-- Header Banner -->
+    <div class="banner-header section-padding bg-position-bottom valign bg-img bg-fixed" data-overlay-dark="4" data-background="/img/over/1.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 caption mt-90">
+                    <h5>AMW Veranda</h5>
+                    <h1>Over Ons</h1>
                 </div>
             </div>
-            <!-- arrow down -->
-            <div class="arrow bounce text-center">
-                <a href="#gallery" class=""> <i class="ti-arrow-down"></i> </a>
-            </div>
         </div>
-        <!-- Image Gallery -->
-        <section class="section-padding" id="gallery">
+    </div>
+
+        <!-- Contact -->
+        <section class="contact section-padding">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-subtitle">Afbeeldingen</div>
-                        <div class="section-title">Afbeelding Galerij</div>
+                <div class="section-title">
+                    Ons verhaal</div>
+
+                <div class="row mb-20">                   
+                    <div class="col-md-6 mb-20">
+                        <p>
+                            De AMW-veranda is een alles-in-één oplossing voor wie op zoek is naar een veranda of andere soorten overkapping. Het is een samenwerkingsverband van bedrijven die elkaar aanvullen en versterken op het gebied van kennis, vakmanschap en expertise. De deelnemende bedrijven beschikken over jarenlange ervaring en staan garant voor topkwaliteit en service, van ontwerp tot en met montage.
+                        </p>
+
                     </div>
-                    <!-- 3 columns -->
-                    <div class="col-md-4 gallery-item">
-                        <a href="img/veranda1.jpg" title="" class="img-zoom">
-                            <div class="gallery-box">
-                                <div class="gallery-img"> <img src="img/veranda1.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                            </div>
-                        </a>
+                    <div class="col-md-5 mb-30">
+                        <p>
+                            Wij streven ernaar om onze klanten het ultieme buitenleven te bieden. Wij geloven dat elke woning verdient om verrijkt te worden met een veranda die niet alleen praktisch en stijlvol is, maar ook een verlengstuk van het leven binnenshuis biedt.
+                        </p>
+
                     </div>
-                    <div class="col-md-4 gallery-item">
-                        <a href="img/veranda2.jpg" title="" class="img-zoom">
-                            <div class="gallery-box">
-                                <div class="gallery-img"> <img src="img/veranda2.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                            </div>
-                        </a>
+                </div>
+                
+            </div>
+            <div class="container">
+                <div class="row md-20">
+
+                    <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp"> 
+                        <h6>
+                            AMW-Veranda,
+                        </h6>
+                        <h4>
+                            Brede selectie aan overkappingen voor elke stijl en wens
+                        </h4>
+                        <p>
+                            Met ons aanbod van veranda's, tuinkamers, kapschuren, lamellendaken en pergoladaken bieden wij een breed assortiment aan overkappingen voor elke wens en smaak. Daarnaast bieden wij een verscheidenheid aan uitbreidingen en opties, van wandsystemen tot zonwering, waarmee je jouw veranda op een unieke en praktische manier kunt inrichten. Onze medewerkers zijn gekwalificeerd en getraind in het vak, zodat zij je op een deskundige manier kunnen adviseren en begeleiden.                        
+                            Ook kun je bij ons opgeleid worden tot specialist in het plaatsen van overkappingen.
+                        </p>
+
                     </div>
-                    <div class="col-md-4 gallery-item">
-                        <a href="img/veranda3.jpg" title="" class="img-zoom">
-                            <div class="gallery-box">
-                                <div class="gallery-img"> <img src="img/veranda3.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                            </div>
-                        </a>
+                    <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp">
+                        <img src="/img/over/2.jpg" alt="">
                     </div>
-                    <!-- 2 columns -->
-                    <div class="col-md-6 gallery-item">
-                        <a href="img/veranda5.jpg" title="" class="img-zoom">
-                            <div class="gallery-box">
-                                <div class="gallery-img"> <img src="img/veranda5.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                            </div>
-                        </a>
+
+                    <div class="col-md-11 animate-box" data-animate-effect="fadeInUp">
+                        <p>
+                            AMW-veranda is meer dan 14 jaar actief en staat voor 100% kwaliteit en service. Wij maken gebruik van eigen productie, waardoor wij snel kunnen schakelen en een snelle en efficiënte uitvoering van jouw project kunnen garanderen. Bovendien bieden wij de mogelijkheid om gratis te komen inmeten, zodat wij een op maat gemaakt ontwerp kunnen presenteren. Kies voor AMW-veranda en creëer de extra leefruimte die je altijd al wilde hebben
+                        </p>
                     </div>
-                    <div class="col-md-6 gallery-item">
-                        <a href="img/veranda9.jpg" title="" class="img-zoom">
-                            <div class="gallery-box">
-                                <div class="gallery-img"> <img src="img/veranda9.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- 3 columns -->
-                    <div class="col-md-4 gallery-item">
-                        <a href="img/veranda10.jpg" title="" class="img-zoom">
-                            <div class="gallery-box">
-                                <div class="gallery-img"> <img src="img/veranda10.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 gallery-item">
-                        <a href="img/veranda7.jpg" title="" class="img-zoom">
-                            <div class="gallery-box">
-                                <div class="gallery-img"> <img src="img/veranda7.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 gallery-item">
-                        <a href="img/veranda6.jpg" title="" class="img-zoom">
-                            <div class="gallery-box">
-                                <div class="gallery-img"> <img src="img/veranda6.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                            </div>
-                        </a>
-                    </div>
+
                 </div>
             </div>
         </section>
-
 
        <!-- Footer -->
        <footer class="footer">
@@ -174,15 +148,13 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="footer-column footer-about">
-                            <h3 class="footer-title">Over AMW veranda</h3>
-                            <p class="footer-about-text">AMW Veranda biedt elegantie en comfort met haar
-                                hoogwaardige veranda's. Het bedrijf staat bekend om de beste prijzen in de markt en
-                                een volledige coördinatie van realisatie tot afwerking. Geniet elk seizoen van uw
-                                tuin in stijl met een veranda van AMW.</p>
-                            <div class="footer-language"> <i class="lni ti-world"></i>
+                            <h3 class="footer-title">About AMW Veranda</h3>
+                            <p class="footer-about-text">AMW Veranda offers elegance and comfort with its high-quality verandas. 
+                                The company is known for the best prices in the market and a full coordination from realization to finish. Enjoy every season in your garden in style with a veranda from AMW.</p>
+                        <div class="footer-language"> <i class="lni ti-world"></i>
                                 <select class="language-select" onchange="changeLanguage(this.value)">
+                                  <option value="de">Deutschland</option>
                                     <option value="en">English</option>
-                                    <option value="de">Deutschland</option>
                                     <option value="nl">Nederlands</option>
                                 </select>
                             </div>
@@ -190,13 +162,13 @@
                     </div>
                     <div class="col-md-3 offset-md-1">
                         <div class="footer-column footer-explore clearfix">
-                            <h3 class="footer-title">Ontdek</h3>
+                            <h3 class="footer-title">Explore</h3>
                             <ul class="footer-explore-list list-unstyled">
                                 <li><a href='index.html'>Home</a></li>
-                                <li><a href='over.html'>Over Ons</a></li>
-                                <li><a href='diensten.html'> Diensten</a></li>
-                                <li><a href="gallerij.html">Gallerij</a></li>
-                                <li><a href='offerte.html'>Offerte</a></li>
+                                <li><a href='over.html'>About Us</a></li>
+                                <li><a href='diensten.html'>Services</a></li>
+                                <li><a href="gallerij.html">Gallery</a></li>
+                                <li><a href='offerte.html'>Offer</a></li>
                                 <li><a href='contact.html'>Contact</a></li>
                             </ul>
                         </div>
@@ -205,7 +177,7 @@
                         <div class="footer-column footer-contact">
                             <h3 class="footer-title">Contact</h3>
                             <p class="footer-contact-text">Jan van de Capellelaan 60,
-                                5642 LE Eindhoven. Nederland
+                                5642 LE Eindhoven. Netherlands
                             </p>
                             <div class="footer-contact-info">
                                 <p class="footer-contact-phone">
@@ -233,7 +205,7 @@
                     <div class="col-md-12">
                         <div class="footer-bottom-inner">
                             <p class="footer-bottom-copy-right">
-                                © Copyright 2023 | Website is gemaakt door
+                                © Copyright 2023 | Website is made by
                                 <a href="https://www.linkedin.com/in/zenoubagouram/" target="_blank">Zineb Gouram</a> & 
                                 <a href="https://www.linkedin.com/in/ranim-m-984169200" target="_blank">Ranim Mohammed</a>
                             </p>
@@ -264,4 +236,5 @@
     <script src="/js/smooth-scroll.min.js"></script>
     <script src="/js/custom.js"></script>
 </body>
+
 </html>
