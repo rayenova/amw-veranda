@@ -51,7 +51,7 @@ const dataString = JSON.stringify(combinedData);
 // }
 
   const xhr = new XMLHttpRequest();
-  xhr.open("POST", "/offerte.php", true);
+  xhr.open("POST", "offerte.php", true);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.onreadystatechange = function() {
   if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
