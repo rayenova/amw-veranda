@@ -42,14 +42,6 @@ combinedData.Afmetingen.opmerking = document.querySelector("#opmerking").value;
 console.log(combinedData);
 const dataString = JSON.stringify(combinedData);
 
-// try {
-//   const dataString = JSON.stringify(combinedData);
-//   const parsedData = JSON.parse(dataString);
-//   console.log("combinedData is a valid JSON string");
-// } catch (error) {
-//   console.error("combinedData is not a valid JSON string:", error.message);
-// }
-
   const xhr = new XMLHttpRequest();
   xhr.open("POST", "offerte.php", true);
   xhr.setRequestHeader("Content-Type", "application/json");

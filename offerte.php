@@ -6,10 +6,12 @@ header("Content-Type: application/json");
 
 $dataString = json_decode(file_get_contents("php://input"), true);
 
-$headers = "From: ranimm01@hotmail.com\r\n";
+$headers = "From: AMW Veranda offerte form" . "\r\n" .
+"CC: Info@amw-veranda.nl";
 
-$to = "ranimm01@hotmail.com";
+$to = "Info@amw-veranda.nl";
 $subject = "Offerte form submission";
+
 $message = "Form data:\n";
 $message .= "Name: " . $dataString['contactInformatie']['name'] . "\n";
 $message .= "Last Name: " . $dataString['contactInformatie']['lastname'] . "\n";
