@@ -53,6 +53,20 @@ const dataString = JSON.stringify(combinedData);
   };
   console.log(dataString);
   xhr.send(dataString);
+
+  $.ajax({
+    type: 'POST',
+    url: 'offerte.php',
+    data: dataString,
+    success: function(response) {
+      if (response === 'success') {
+        $('.title-anim-appear-line').text('Dankjewel voor de offerte! Uw aanvraag is verstuurd.');
+      } else {
+        $('.title-anim-appear-line').text('Er is iets mis gegaan bij het versturen van de offerte, probeer het later opnieuw.');
+      }
+    }
+  });
+  
 });
 // JSON.stringify(combinedData);
 

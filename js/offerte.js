@@ -56,3 +56,17 @@ document.getElementById("offerteForm").addEventListener("submit", function(event
       });
   });
 
+
+  $(document).ready(function() {
+    $("#animAppearTitleLine").click(function(e) {
+      $(".form-group").css("display", "none");
+    });
+  
+    $("#animAppearTitleLine").click(function() {
+      $('.anim-appear-line').addClass('active');
+      setTimeout(function() {
+        $('.title-anim-appear-line').addClass('active');
+      }, 1000);
+    });
+  });
+  

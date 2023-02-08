@@ -64,6 +64,42 @@
     --text-color: #868991;
 }
 
+.anim-appear-line {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 5px 0;
+    margin: 20px auto;
+}
+
+.anim-appear-line .line {
+    transition: left 1000ms;
+    left: -100%;
+}
+
+.anim-appear-line.active .line {
+    transition: left 1000ms;
+    left: 0;
+    height: 3px;
+    background: var(--line-border-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.title-anim-appear-line {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    transition: top 1000ms;
+    top: 100px;
+    padding-bottom: 1em;
+}
+
+.anim-appear-line.active .title-anim-appear-line.active {
+    transition: top 1000ms;
+    top: 0;
+}
 
 
 .progress-container {

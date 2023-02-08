@@ -507,8 +507,12 @@
 
 
                             <!-- step3 -->
-                            <form class="clearfix form1" id="offerteForm3" style="display: none;" action="server.php">
-                                <h3>Veranda info</h3>
+                            <form class="clearfix form1" id="offerteForm3" style="display: none;">
+
+
+                                <h3 class="form-group">Veranda info</h3>
+
+
 
                                 <div class="col-md-6 form-group">
                                     <label for="breedte"><span>*</span> Breedte in centimeter (cm)</label>
@@ -525,12 +529,22 @@
                                     <input name="opmerking" id="opmerking" type="text" placeholder="Opmerking...">
                                 </div>
 
+                                <div class="anim-appear-line">
+                                    <div class="title-anim-appear-line">
+                                        Dankjewel voor de offerte! Uw aanvraag is verstuurd.
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+
                                 <div class="col-md-12">
-                                    <button class="butn-dark btn">
+                                    <button class="butn-dark btn" value="Lancer animation" id="animAppearTitleLine">
                                         <p><span>Submit</span></p>
                                     </button>
                                 </div>
+
+                               
                             </form>
+
 
 
                         </div>

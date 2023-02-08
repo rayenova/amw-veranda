@@ -33,7 +33,10 @@ $message .= "Opmerking: " . $dataString['Afmetingen']['opmerking'] . "\n";
 
 if (mail($to, $subject, $message, $headers)) {
   echo json_encode(["status" => "Success"]);
+  echo 'success';
+  
   } else {
   echo json_encode(["status" => "Failure"]);
+  echo 'Failed to send email';
 }
 ?>
