@@ -42,17 +42,17 @@ combinedData.Afmetingen.opmerking = document.querySelector("#opmerking").value;
 console.log(combinedData);
 const dataString = JSON.stringify(combinedData);
 
-  const xhr = new XMLHttpRequest();
-  xhr.open("POST", "offerte.php", true);
-  xhr.setRequestHeader("Content-Type", "application/json");
-  xhr.onreadystatechange = function() {
-  if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-  const response = JSON.parse(xhr.responseText);
-  console.log(response.status);
-  }
-  };
-  console.log(dataString);
-  xhr.send(dataString);
+  // const xhr = new XMLHttpRequest();
+  // xhr.open("POST", "offerte.php", true);
+  // xhr.setRequestHeader("Content-Type", "application/json");
+  // xhr.onreadystatechange = function() {
+  // if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+  // const response = JSON.parse(xhr.responseText);
+  // console.log(response.status);
+  // }
+  // };
+  // console.log(dataString);
+  // xhr.send(dataString);
 
   $.ajax({
     type: 'POST',
