@@ -68,24 +68,3 @@ const dataString = JSON.stringify(combinedData);
   });
   
 });
-// JSON.stringify(combinedData);
-
-
-// fetch("/php/server.php", {
-//   method: "POST",
-//   headers: {
-//     "Content-Type": "application/json"
-//   },
-//   body: JSON.stringify(combinedData)
-// })
-
-//   .then(res => {
-//     if (!res.ok) {
-//       throw new Error("Response is not JSON");
-//     }
-//     return res.json();
-    
-//   })
-//   .then(data => console.log(data))
-//   .catch(error => console.error(error));
-
