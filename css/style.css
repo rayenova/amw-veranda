@@ -1047,7 +1047,7 @@ color: var(--iconANDtext);
     box-sizing: border-box;
 }
 #cappa-aside .cappa-main-menu {
-    margin-bottom: 90px;
+    margin-bottom: 60px;
 }
 @media screen and (max-width: 768px) {
     #cappa-aside .cappa-main-menu {
