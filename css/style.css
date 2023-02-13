@@ -5125,7 +5125,9 @@ select {
 }
 .footer-bottom-inner {
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   text-align: center;
 }
 .footer-bottom-copy-right {
